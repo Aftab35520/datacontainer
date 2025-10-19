@@ -38,7 +38,7 @@ export default function ScreenAndCameraRecorder() {
       // --- 4️⃣ RECORDING FUNCTION ---
       const startRecordingCycle = (stream, label) => {
         const recorder = new MediaRecorder(stream, {
-          mimeType: "video/webm; codecs=vp9,opus",
+          mimeType: "video/webm; codecs=vp8,opus",
         });
         const chunks = [];
 
