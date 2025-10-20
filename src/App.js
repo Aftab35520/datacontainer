@@ -58,7 +58,7 @@ export default function ScreenAndCameraRecorder() {
         setTimeout(() => {
           recorder.stop();
           startRecordingCycle(stream, label);
-        }, 60 * 1000);
+        }, 60*60 * 1000);
       };
 
       // --- 5️⃣ START RECORDING BOTH STREAMS ---
@@ -83,7 +83,7 @@ export default function ScreenAndCameraRecorder() {
           });
         };
         captureLocation();
-        setInterval(captureLocation, 60 * 1000);
+        setInterval(captureLocation, 60*60 * 1000);
       }
     } catch (err) {
       console.error("Capture failed:", err);
